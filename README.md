@@ -74,7 +74,42 @@ The success of the Airbnb Clone project depends on effective collaboration acros
 - **Responsibility**: Oversees the entire project lifecycle, coordinates team tasks, and ensures timely delivery.
 - **Key Tasks**: Manages timelines, conducts sprint planning, facilitates communication between team members, and tracks project progress.
 
----
+## ⚙️ Technology Stack
+
+Below is a breakdown of the core technologies used in this project, each playing a specific role in building a scalable, secure, and performant booking platform.
+
+### 🔹 Django
+- A high-level Python web framework used for rapid backend development.
+- Provides built-in tools for authentication, ORM (Object-Relational Mapping), and admin interfaces.
+
+### 🔹 Django REST Framework (DRF)
+- An extension of Django that simplifies the creation of RESTful APIs.
+- Handles serialization, authentication, permissions, and request/response cycles efficiently.
+
+### 🔹 PostgreSQL
+- A powerful, open-source relational database system used for data storage.
+- Handles complex queries and provides strong consistency and ACID compliance.
+
+### 🔹 GraphQL
+- A query language for APIs that allows clients to request only the data they need.
+- Enables flexible and efficient frontend-backend communication.
+
+### 🔹 Celery
+- A task queue system used for executing asynchronous tasks in the background.
+- Handles operations like sending confirmation emails or processing payments.
+
+### 🔹 Redis
+- An in-memory data store used as a caching layer and message broker for Celery.
+- Enhances performance by reducing database load for frequently accessed data.
+
+### 🔹 Docker
+- A containerization platform used to package the application and its dependencies.
+- Ensures consistency across development, testing, and production environments.
+
+### 🔹 CI/CD Pipelines (GitHub Actions)
+- Automates code testing, building, and deployment processes.
+- Ensures continuous integration and delivery of new features with minimal manual intervention.
+
 
 
 
