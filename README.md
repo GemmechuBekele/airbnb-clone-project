@@ -46,5 +46,35 @@ To successfully complete the project tasks, learners must:
 - **CI/CD Pipeline Integration**  
   Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
+## 👥 Team Roles
+
+The success of the Airbnb Clone project depends on effective collaboration across specialized roles. Below is an overview of each key team member's responsibilities:
+
+### 🔧 Backend Developer
+- **Responsibility**: Designs and implements API endpoints, business logic, and integrates external services like payment gateways.
+- **Key Tasks**: Develops RESTful and GraphQL APIs using Django and Django REST Framework; ensures code quality, performance, and security.
+
+### 🛢️ Database Administrator (DBA)
+- **Responsibility**: Manages the design, structure, performance, and security of the database.
+- **Key Tasks**: Creates efficient schemas, indexes, and optimizations in PostgreSQL or MySQL; handles data migrations and backups.
+
+### ⚙️ DevOps Engineer
+- **Responsibility**: Automates infrastructure setup, deployment, monitoring, and scaling of applications.
+- **Key Tasks**: Sets up CI/CD pipelines, configures Docker environments, manages cloud services (e.g., AWS/GCP), and ensures system reliability.
+
+### 🧪 QA Engineer
+- **Responsibility**: Ensures that the application meets quality standards and performs correctly under various conditions.
+- **Key Tasks**: Designs test cases, performs automated and manual testing, and ensures that endpoints and business logic behave as expected.
+
+### 🎨 UI/UX Designer *(Optional in full-stack learning teams)*
+- **Responsibility**: Crafts intuitive and accessible user interfaces that offer an optimal experience across devices.
+- **Key Tasks**: Designs wireframes, mockups, and user journeys using tools like Figma; collaborates with frontend developers to bring designs to life.
+
+### 📋 Project Manager
+- **Responsibility**: Oversees the entire project lifecycle, coordinates team tasks, and ensures timely delivery.
+- **Key Tasks**: Manages timelines, conducts sprint planning, facilitates communication between team members, and tracks project progress.
+
 ---
+
+
 
