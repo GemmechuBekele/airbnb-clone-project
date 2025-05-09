@@ -198,6 +198,41 @@ Employs caching techniques and database indexing to improve response times and r
 ### 🔒 Security Measures
 Implements strong authentication, access controls, and protective features to defend against common security risks, ensuring user data and platform integrity are maintained.
 
+## 🔐 API Security
+
+Implementing strong security practices is essential to protect user information, manage system access, and prevent harmful activities. The backend of this Airbnb Clone will include several critical security features:
+
+### ✅ User Authentication
+**What it does**: Confirms user identity using methods like JSON Web Tokens (JWT) before granting access to protected routes.  
+**Why it's important**: Ensures only verified users can view or modify sensitive data, such as personal profiles or booking details.
+
+### ✅ Access Control (Authorization)
+**What it does**: Assigns permissions based on user roles (such as host or guest) to restrict what actions each user can perform.  
+**Why it's important**: Prevents users from accessing or changing resources they don’t own or aren’t authorized to manage.
+
+### ✅ Request Rate Limiting
+**What it does**: Caps the number of API requests a user or IP address can make within a specific time frame.  
+**Why it's important**: Helps defend against abuse, automated attacks, and server overload.
+
+### ✅ Input Validation and Sanitization
+**What it does**: Checks and cleans incoming data to prevent unexpected or malicious inputs.  
+**Why it's important**: Shields the system from common security threats like SQL injection or script attacks.
+
+### ✅ Encrypted Communication (HTTPS)
+**What it does**: Uses HTTPS to encrypt data exchanged between the client and server.  
+**Why it's important**: Protects against interception or tampering during transmission.
+
+### ✅ Secured Payment Handling
+**What it does**: Leverages secure third-party services (like Stripe) for managing transactions.  
+**Why it's important**: Keeps payment data safe and reduces the risk of financial theft or fraud.
+
+### ✅ CORS Policy Management
+**What it does**: Sets up rules to control which websites can make requests to the backend.  
+**Why it's important**: Blocks unauthorized applications from making API calls.
+
+### ✅ Logging and Activity Monitoring
+**What it does**: Tracks usage patterns and error events to detect suspicious behavior.  
+**Why it's important**: Supports fast detection of threats and helps in analyzing incidents if they occur.
 
 
 
