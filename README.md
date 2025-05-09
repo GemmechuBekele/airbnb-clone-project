@@ -170,6 +170,33 @@ The following section outlines the core database entities required for the Airbn
 - **Each review** is written by **one user** for **one property** (many-to-one).
 - **Each payment** is linked to **one booking** (one-to-one or one-to-many depending on implementation).
 
+## ✨ Feature Breakdown
+
+This section outlines the primary functionalities developed in the Airbnb Clone project. Each feature plays a critical role in replicating the behavior of a real-world property rental platform.
+
+### 👤 User Management
+Enables individuals to sign up, log in securely, and manage their personal profiles. The system distinguishes between hosts and guests, ensuring access control based on user roles.
+
+### 🏡 Property Listings
+Hosts have the ability to add, modify, and delete their rental property details, including descriptions, pricing, and availability. This feature supports guests in discovering and selecting accommodations.
+
+### 📆 Booking Functionality
+Facilitates the process of reserving properties by allowing guests to choose dates and confirm bookings. It ensures that listings are available and manages all associated reservation data.
+
+### 💳 Payment Integration
+Handles financial transactions associated with bookings by integrating a secure payment solution. It keeps records of each transaction and ensures smooth, protected processing.
+
+### 📝 Ratings and Reviews
+Lets guests share feedback and rate the properties they’ve visited. This enhances platform credibility and helps future users make well-informed choices.
+
+### 📚 API Interface
+RESTful APIs are described using the OpenAPI specification for easy use and integration, while GraphQL endpoints offer efficient and customizable data querying capabilities.
+
+### ⚙️ Performance Enhancements
+Employs caching techniques and database indexing to improve response times and reduce server workload, which supports scalability and efficient performance.
+
+### 🔒 Security Measures
+Implements strong authentication, access controls, and protective features to defend against common security risks, ensuring user data and platform integrity are maintained.
 
 
 
