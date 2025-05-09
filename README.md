@@ -110,6 +110,68 @@ Below is a breakdown of the core technologies used in this project, each playing
 - Automates code testing, building, and deployment processes.
 - Ensures continuous integration and delivery of new features with minimal manual intervention.
 
+## 🗃️ Database Design
+
+The following section outlines the core database entities required for the Airbnb Clone project and how they relate to one another.
+
+### 🔸 Users
+**Description**: Represents guests or hosts registered on the platform.  
+**Important Fields**:
+- `id`: Primary key
+- `username`: Unique username
+- `email`: User's email address
+- `password_hash`: Encrypted password
+- `is_host`: Boolean indicating if the user can list properties
+
+### 🔸 Properties
+**Description**: Listings created by hosts that can be booked by guests.  
+**Important Fields**:
+- `id`: Primary key
+- `user_id`: Foreign key to Users (host)
+- `title`: Title of the property
+- `description`: Detailed description of the property
+- `price_per_night`: Cost to book per night
+
+### 🔸 Bookings
+**Description**: Records of reservations made by users for a property.  
+**Important Fields**:
+- `id`: Primary key
+- `user_id`: Foreign key to Users (guest)
+- `property_id`: Foreign key to Properties
+- `check_in`: Check-in date
+- `check_out`: Check-out date
+
+### 🔸 Payments
+**Description**: Records of payments made for bookings.  
+**Important Fields**:
+- `id`: Primary key
+- `booking_id`: Foreign key to Bookings
+- `amount`: Total payment amount
+- `payment_date`: Date of transaction
+- `payment_method`: Method used (e.g., card, PayPal)
+
+### 🔸 Reviews
+**Description**: Feedback left by users for properties they’ve stayed at.  
+**Important Fields**:
+- `id`: Primary key
+- `user_id`: Foreign key to Users (review author)
+- `property_id`: Foreign key to Properties
+- `rating`: Numeric rating (e.g., 1–5)
+- `comment`: Text feedback
+
+---
+
+### 🔗 Entity Relationships
+
+- **A user** can own **multiple properties** (one-to-many).
+- **A user** can make **multiple bookings** (one-to-many).
+- **A property** can have **multiple bookings** and **multiple reviews** (one-to-many).
+- **Each booking** belongs to **one user** and **one property** (many-to-one).
+- **Each review** is written by **one user** for **one property** (many-to-one).
+- **Each payment** is linked to **one booking** (one-to-one or one-to-many depending on implementation).
+
+
+
 
 
 
